@@ -1,0 +1,970 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+SHA-256 comparison failed:
+Calculated: 174f900b7a4036158a34b6ba1ccb6ecaa69f3f74e9624b3db429cfd9874cb2ad
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9908
+[0;32mI (45) boot: ESP-IDF 33c1bea7-dirty 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Jul  6 2024 17:10:51[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (49) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (58) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (62) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (67) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (76) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (91) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (98) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (106) boot:  3 ota_0            OTA app          00 10 00010000 002ee000[0m
+[0;32mI (113) boot:  4 ota_1            OTA app          00 11 00300000 002ee000[0m
+[0;32mI (121) boot:  5 triad            WiFi data        01 02 005ee000 00004000[0m
+[0;32mI (128) boot: End of partition table[0m
+[0;32mI (133) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0ba90h ( 47760) map[0m
+[0;32mI (146) esp_image: segment 1: paddr=0001bab8 vaddr=3fc94200 size=02f94h ( 12180) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0001ea54 vaddr=40374000 size=015c4h (  5572) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1f6a8h (128680) map[0m
+[0;32mI (181) esp_image: segment 4: paddr=0003f6d0 vaddr=403755c4 size=0eb54h ( 60244) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (209) cpu_start: Multicore app[0m
+[0;32mI (209) octal_psram: ECC is enabled[0m
+[0;32mI (209) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (211) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (216) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (222) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (227) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (232) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (237) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (243) octal_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (249) octal_psram: BurstLen     : 0x03 (1024 Byte)[0m
+[0;32mI (254) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (260) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (266) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (271) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (276) esp_psram: Speed: 80MHz[0m
+[0;32mI (295) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (302) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (302) cpu_start: Pro cpu up.[0m
+[0;32mI (302) cpu_start: Starting app cpu, entry point is 0x4037551c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (765) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (774) cpu_start: Pro cpu start user code[0m
+[0;32mI (774) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (774) cpu_start: Application information:[0m
+[0;32mI (777) cpu_start: Project name:     main[0m
+[0;32mI (782) cpu_start: App version:      0.0.1_0018-1-g33c1bea7-dirty[0m
+[0;32mI (789) cpu_start: Compile time:     Jul  6 2024 17:08:11[0m
+[0;32mI (795) cpu_start: ELF file SHA256:  8ab173d60e813561...[0m
+[0;32mI (801) cpu_start: ESP-IDF:          33c1bea7-dirty[0m
+[0;32mI (807) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (811) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (816) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (821) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (828) heap_init: At 3FC97B20 len 00051BF0 (326 KiB): DRAM[0m
+[0;32mI (834) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (841) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (847) esp_psram: Adding pool of 7488K of PSRAM memory to heap allocator[0m
+[0;32mI (855) spi_flash: detected chip: gd[0m
+[0;32mI (859) spi_flash: flash io: dio[0m
+[0;32mI (863) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (870) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (877) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (882) coexist: coexist rom version e7ae62f[0m
+[0;32mI (887) app_start: Starting scheduler on CPU0[0m
+[0;32mI (892) app_start: Starting scheduler on CPU1[0m
+[0;32mI (892) main_task: Started on CPU0[0m
+[0;32mI (902) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (910) main_task: Calling app_main()[0m
+[0;32mI (918) HK: acce_x:0.00, acce_y:0.00, acce_z:0.00
+[0m
+[0;32mI (921) HK: gyro_x:0.00, gyro_y:0.00, gyro_z:0.00
+[0m
+[0;32mI (926) HK: t:28.81 
+[0m
+[0;32mI (930) HK: acce_x:0.24, acce_y:-0.80, acce_z:-0.46
+[0m
+[0;32mI (936) HK: gyro_x:-49.49, gyro_y:12.20, gyro_z:-17.25
+[0m
+[0;32mI (941) HK: t:28.81 
+[0m
+[0;32mI (943) HK: pitch:152.34 roll:-119.78 
+[0m
+[0;32mI (1449) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.46
+[0m
+[0;32mI (1451) HK: gyro_x:-6.55, gyro_y:-0.02, gyro_z:-1.73
+[0m
+[0;32mI (1452) HK: t:29.00 
+[0m
+[0;32mI (1453) HK: pitch:152.33 roll:-123.09 
+[0m
+[0;32mI (1958) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.46
+[0m
+[0;32mI (1960) HK: gyro_x:-6.39, gyro_y:0.15, gyro_z:-2.10
+[0m
+[0;32mI (1961) HK: t:29.09 
+[0m
+[0;32mI (1962) HK: pitch:152.40 roll:-126.27 
+[0m
+[0;32mI (2467) HK: acce_x:0.24, acce_y:-0.80, acce_z:-0.45
+[0m
+[0;32mI (2469) HK: gyro_x:-6.50, gyro_y:0.06, gyro_z:-1.81
+[0m
+[0;32mI (2470) HK: t:29.05 
+[0m
+[0;32mI (2471) HK: pitch:152.43 roll:-129.48 
+[0m
+[0;32mI (2976) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.46
+[0m
+[0;32mI (2978) HK: gyro_x:-6.30, gyro_y:0.08, gyro_z:-1.95
+[0m
+[0;32mI (2979) HK: t:29.09 
+[0m
+[0;32mI (2980) HK: pitch:152.46 roll:-132.55 
+[0m
+[0;32mI (3485) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.46
+[0m
+[0;32mI (3487) HK: gyro_x:-6.31, gyro_y:-0.20, gyro_z:-1.83
+[0m
+[0;32mI (3488) HK: t:29.14 
+[0m
+[0;32mI (3489) HK: pitch:152.36 roll:-135.61 
+[0m
+[0;32mI (3994) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.46
+[0m
+[0;32mI (3996) HK: gyro_x:-6.19, gyro_y:0.08, gyro_z:-1.98
+[0m
+[0;32mI (3997) HK: t:29.19 
+[0m
+[0;32mI (3998) HK: pitch:152.40 roll:-138.57 
+[0m
+[0;32mI (4503) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.45
+[0m
+[0;32mI (4505) HK: gyro_x:-6.39, gyro_y:-0.02, gyro_z:-1.85
+[0m
+[0;32mI (4506) HK: t:29.24 
+[0m
+[0;32mI (4507) HK: pitch:152.38 roll:-141.59 
+[0m
+[0;32mI (5012) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.46
+[0m
+[0;32mI (5014) HK: gyro_x:-6.52, gyro_y:-0.01, gyro_z:-1.71
+[0m
+[0;32mI (5015) HK: t:29.28 
+[0m
+[0;32mI (5016) HK: pitch:152.38 roll:-144.66 
+[0m
+[0;32mI (5521) HK: acce_x:0.25, acce_y:-0.81, acce_z:-0.47
+[0m
+[0;32mI (5523) HK: gyro_x:-6.42, gyro_y:-0.05, gyro_z:-1.97
+[0m
+[0;32mI (5524) HK: t:29.24 
+[0m
+[0;32mI (5525) HK: pitch:152.35 roll:-147.65 
+[0m
+[0;32mI (6030) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.46
+[0m
+[0;32mI (6032) HK: gyro_x:-6.33, gyro_y:-0.05, gyro_z:-1.88
+[0m
+[0;32mI (6033) HK: t:29.28 
+[0m
+[0;32mI (6034) HK: pitch:152.33 roll:-150.55 
+[0m
+[0;32mI (6539) HK: acce_x:0.25, acce_y:-0.81, acce_z:-0.46
+[0m
+[0;32mI (6541) HK: gyro_x:-6.41, gyro_y:-0.27, gyro_z:-2.05
+[0m
+[0;32mI (6542) HK: t:29.24 
+[0m
+[0;32mI (6543) HK: pitch:152.19 roll:-153.48 
+[0m
+[0;32mI (7048) HK: acce_x:0.25, acce_y:-0.80, acce_z:-0.46
+[0m
+[0;32mI (7050) HK: gyro_x:-6.34, gyro_y:0.24, gyro_z:-1.88
+[0m
+[0;32mI (7051) HK: t:29.24 
+[0m
+[0;32mI (7052) HK: pitch:152.31 roll:-156.34 
+[0m
+[0;32mI (7557) HK: acce_x:0.24, acce_y:-0.80, acce_z:-0.46
+[0m
+[0;32mI (7559) HK: gyro_x:-6.24, gyro_y:0.21, gyro_z:-1.77
+[0m
+[0;32mI (7560) HK: t:29.24 
+[0m
+[0;32mI (7561) HK: pitch:152.41 roll:-159.12 
+[0m
+[0;32mI (8066) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.46
+[0m
+[0;32mI (8068) HK: gyro_x:-6.21, gyro_y:-0.25, gyro_z:-1.82
+[0m
+[0;32mI (8069) HK: t:29.24 
+[0m
+[0;32mI (8070) HK: pitch:152.28 roll:-161.85 
+[0m
+[0;32mI (8575) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.46
+[0m
+[0;32mI (8577) HK: gyro_x:-6.35, gyro_y:0.27, gyro_z:-1.84
+[0m
+[0;32mI (8578) HK: t:29.28 
+[0m
+[0;32mI (8579) HK: pitch:152.41 roll:-164.63 
+[0m
+[0;32mI (9084) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.47
+[0m
+[0;32mI (9086) HK: gyro_x:-6.27, gyro_y:-0.11, gyro_z:-1.92
+[0m
+[0;32mI (9087) HK: t:29.33 
+[0m
+[0;32mI (9088) HK: pitch:152.36 roll:-167.34 
+[0m
+[0;32mI (9593) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.46
+[0m
+[0;32mI (9595) HK: gyro_x:-6.38, gyro_y:-0.26, gyro_z:-2.43
+[0m
+[0;32mI (9596) HK: t:29.24 
+[0m
+[0;32mI (9597) HK: pitch:152.23 roll:-170.08 
+[0m
+[0;32mI (10102) HK: acce_x:0.24, acce_y:-0.81, acce_z:-0.47
+[0m
+[0;32mI (10104) HK: gyro_x:-6.44, gyro_y:-0.05, gyro_z:-1.92
+[0m
+[0;32mI (10105) HK: t:29.19 
+[0m
+[0;32mI (10106) HK: pitch:152.20 roll:-172.82 
+[0m
+[0;32mI (10612) HK: acce_x:0.24, acce_y:-0.80, acce_z:-0.47
+[0m
+[0;32mI (10614) HK: gyro_x:-6.44, gyro_y:-0.11, gyro_z:-1.95
+[0m
+[0;32mI (10615) HK: t:29.33 
+[0m
+[0;32mI (10616) HK: pitch:152.15 roll:-175.54 
+[0m
+[0;32mI (11122) HK: acce_x:0.29, acce_y:-0.90, acce_z:-0.48
+[0m
+[0;32mI (11124) HK: gyro_x:59.31, gyro_y:21.27, gyro_z:41.79
+[0m
+[0;32mI (11125) HK: t:29.24 
+[0m
+[0;32mI (11126) HK: pitch:162.86 roll:-145.02 
+[0m
+[0;32mI (11632) HK: acce_x:0.61, acce_y:-0.63, acce_z:0.42
+[0m
+[0;32mI (11634) HK: gyro_x:9.45, gyro_y:22.60, gyro_z:-0.35
+[0m
+[0;32mI (11635) HK: t:29.38 
+[0m
+[0;32mI (11636) HK: pitch:173.20 roll:-139.37 
+[0m
+[0;32mI (12142) HK: acce_x:0.75, acce_y:-0.33, acce_z:0.70
+[0m
+[0;32mI (12144) HK: gyro_x:-31.84, gyro_y:-9.47, gyro_z:-18.47
+[0m
+[0;32mI (12145) HK: t:29.42 
+[0m
+[0;32mI (12146) HK: pitch:167.15 roll:-154.32 
+[0m
+[0;32mI (12652) HK: acce_x:0.72, acce_y:-0.31, acce_z:0.70
+[0m
+[0;32mI (12654) HK: gyro_x:-35.38, gyro_y:-37.63, gyro_z:8.85
+[0m
+[0;32mI (12655) HK: t:29.42 
+[0m
+[0;32mI (12656) HK: pitch:146.94 roll:-170.87 
+[0m
+[0;32mI (13162) HK: acce_x:0.75, acce_y:-0.22, acce_z:0.84
+[0m
+[0;32mI (13164) HK: gyro_x:18.76, gyro_y:-30.16, gyro_z:-11.15
+[0m
+[0;32mI (13165) HK: t:29.52 
+[0m
+[0;32mI (13166) HK: pitch:130.66 roll:-159.84 
+[0m
+[0;32mI (13672) HK: acce_x:0.59, acce_y:0.02, acce_z:0.88
+[0m
+[0;32mI (13674) HK: gyro_x:3.54, gyro_y:41.33, gyro_z:7.40
+[0m
+[0;32mI (13675) HK: t:29.47 
+[0m
+[0;32mI (13676) HK: pitch:150.54 roll:-156.44 
+[0m
+[0;32mI (14181) HK: acce_x:0.12, acce_y:0.21, acce_z:1.07
+[0m
+[0;32mI (14183) HK: gyro_x:7.15, gyro_y:42.51, gyro_z:34.71
+[0m
+[0;32mI (14184) HK: t:29.28 
+[0m
+[0;32mI (14185) HK: pitch:170.53 roll:-151.16 
+[0m
+[0;32mI (14691) HK: acce_x:-0.14, acce_y:0.20, acce_z:1.06
+[0m
+[0;32mI (14693) HK: gyro_x:-2.44, gyro_y:47.85, gyro_z:3.98
+[0m
+[0;32mI (14694) HK: t:29.42 
+[0m
+[0;32mI (14695) HK: pitch:192.91 roll:-150.78 
+[0m
+[0;32mI (15201) HK: acce_x:-0.42, acce_y:0.32, acce_z:0.93
+[0m
+[0;32mI (15203) HK: gyro_x:3.93, gyro_y:48.02, gyro_z:25.52
+[0m
+[0;32mI (15204) HK: t:29.33 
+[0m
+[0;32mI (15205) HK: pitch:214.98 roll:-147.10 
+[0m
+[0;32mI (15711) HK: acce_x:-0.66, acce_y:0.30, acce_z:0.76
+[0m
+[0;32mI (15713) HK: gyro_x:-17.98, gyro_y:26.58, gyro_z:-13.25
+[0m
+[0;32mI (15714) HK: t:29.38 
+[0m
+[0;32mI (15715) HK: pitch:225.85 roll:-154.50 
+[0m
+[0;32mI (16221) HK: acce_x:-0.74, acce_y:0.32, acce_z:0.64
+[0m
+[0;32mI (16223) HK: gyro_x:-3.88, gyro_y:23.35, gyro_z:12.15
+[0m
+[0;32mI (16224) HK: t:29.42 
+[0m
+[0;32mI (16225) HK: pitch:234.89 roll:-154.64 
+[0m
+[0;32mI (16731) HK: acce_x:-0.72, acce_y:0.40, acce_z:0.57
+[0m
+[0;32mI (16733) HK: gyro_x:-7.68, gyro_y:-9.10, gyro_z:-1.34
+[0m
+[0;32mI (16734) HK: t:29.38 
+[0m
+[0;32mI (16735) HK: pitch:227.43 roll:-156.62 
+[0m
+[0;32mI (17241) HK: acce_x:0.21, acce_y:0.21, acce_z:1.02
+[0m
+[0;32mI (17243) HK: gyro_x:-18.42, gyro_y:-184.28, gyro_z:-4.55
+[0m
+[0;32mI (17244) HK: t:29.52 
+[0m
+[0;32mI (17245) HK: pitch:132.20 roll:-164.24 
+[0m
+[0;32mI (17751) HK: acce_x:0.69, acce_y:0.16, acce_z:0.81
+[0m
+[0;32mI (17753) HK: gyro_x:-3.11, gyro_y:-30.60, gyro_z:5.02
+[0m
+[0;32mI (17754) HK: t:29.47 
+[0m
+[0;32mI (17755) HK: pitch:115.84 roll:-164.06 
+[0m
+[0;32mI (18261) HK: acce_x:0.82, acce_y:0.25, acce_z:0.53
+[0m
+[0;32mI (18263) HK: gyro_x:-12.17, gyro_y:-1.74, gyro_z:-4.73
+[0m
+[0;32mI (18264) HK: t:29.42 
+[0m
+[0;32mI (18265) HK: pitch:114.38 roll:-168.31 
+[0m
+[0;32mI (18771) HK: acce_x:0.65, acce_y:0.15, acce_z:0.82
+[0m
+[0;32mI (18773) HK: gyro_x:-26.89, gyro_y:63.71, gyro_z:2.82
+[0m
+[0;32mI (18774) HK: t:29.42 
+[0m
+[0;32mI (18775) HK: pitch:145.78 roll:-180.10 
+[0m
+[0;32mI (19281) HK: acce_x:-0.02, acce_y:0.01, acce_z:1.12
+[0m
+[0;32mI (19283) HK: gyro_x:-14.70, gyro_y:33.71, gyro_z:14.48
+[0m
+[0;32mI (19284) HK: t:29.47 
+[0m
+[0;32mI (19285) HK: pitch:161.33 roll:-185.72 
+[0m
+[0;32mI (19791) HK: acce_x:0.20, acce_y:-0.03, acce_z:1.07
+[0m
+[0;32mI (19793) HK: gyro_x:1.30, gyro_y:4.83, gyro_z:5.04
+[0m
+[0;32mI (19794) HK: t:29.52 
+[0m
+[0;32mI (19795) HK: pitch:162.26 roll:-183.23 
+[0m
+[0;32mI (20300) HK: acce_x:0.04, acce_y:-0.07, acce_z:1.08
+[0m
+[0;32mI (20302) HK: gyro_x:-7.62, gyro_y:45.60, gyro_z:5.89
+[0m
+[0;32mI (20303) HK: t:29.47 
+[0m
+[0;32mI (20304) HK: pitch:183.65 roll:-185.27 
+[0m
+[0;32mI (20810) HK: acce_x:-0.23, acce_y:-0.03, acce_z:1.08
+[0m
+[0;32mI (20812) HK: gyro_x:-7.10, gyro_y:-0.88, gyro_z:0.26
+[0m
+[0;32mI (20813) HK: t:29.52 
+[0m
+[0;32mI (20814) HK: pitch:181.25 roll:-187.02 
+[0m
+[0;32mI (21320) HK: acce_x:-0.10, acce_y:0.04, acce_z:1.13
+[0m
+[0;32mI (21322) HK: gyro_x:-6.16, gyro_y:4.21, gyro_z:-28.85
+[0m
+[0;32mI (21323) HK: t:29.52 
+[0m
+[0;32mI (21324) HK: pitch:181.51 roll:-188.24 
+[0m
+[0;32mI (21830) HK: acce_x:-0.06, acce_y:0.10, acce_z:1.07
+[0m
+[0;32mI (21832) HK: gyro_x:-34.03, gyro_y:4.09, gyro_z:-76.98
+[0m
+[0;32mI (21833) HK: t:29.42 
+[0m
+[0;32mI (21834) HK: pitch:181.73 roll:-203.49 
+[0m
+[0;32mI (22340) HK: acce_x:-0.12, acce_y:0.09, acce_z:1.11
+[0m
+[0;32mI (22342) HK: gyro_x:-9.53, gyro_y:33.93, gyro_z:23.93
+[0m
+[0;32mI (22343) HK: t:29.47 
+[0m
+[0;32mI (22344) HK: pitch:196.98 roll:-206.22 
+[0m
+[0;32mI (22850) HK: acce_x:-0.08, acce_y:0.07, acce_z:1.08
+[0m
+[0;32mI (22852) HK: gyro_x:-31.91, gyro_y:-11.32, gyro_z:-2.88
+[0m
+[0;32mI (22853) HK: t:29.52 
+[0m
+[0;32mI (22854) HK: pitch:189.25 roll:-220.24 
+[0m
+[0;32mI (23360) HK: acce_x:0.01, acce_y:-0.05, acce_z:1.07
+[0m
+[0;32mI (23362) HK: gyro_x:-18.88, gyro_y:0.06, gyro_z:-11.23
+[0m
+[0;32mI (23363) HK: t:29.47 
+[0m
+[0;32mI (23364) HK: pitch:187.40 roll:-227.59 
+[0m
+[0;32mI (23870) HK: acce_x:0.25, acce_y:-0.01, acce_z:1.14
+[0m
+[0;32mI (23872) HK: gyro_x:-35.56, gyro_y:10.05, gyro_z:-72.00
+[0m
+[0;32mI (23873) HK: t:29.52 
+[0m
+[0;32mI (23874) HK: pitch:190.72 roll:-243.28 
+[0m
+[0;32mI (24380) HK: acce_x:0.09, acce_y:-0.11, acce_z:1.06
+[0m
+[0;32mI (24382) HK: gyro_x:16.56, gyro_y:-10.15, gyro_z:-16.34
+[0m
+[0;32mI (24383) HK: t:29.33 
+[0m
+[0;32mI (24384) HK: pitch:183.73 roll:-232.54 
+[0m
+[0;32mI (24890) HK: acce_x:0.13, acce_y:-0.21, acce_z:0.97
+[0m
+[0;32mI (24892) HK: gyro_x:-21.60, gyro_y:1.02, gyro_z:-20.08
+[0m
+[0;32mI (24893) HK: t:29.52 
+[0m
+[0;32mI (24894) HK: pitch:182.49 roll:-241.23 
+[0m
+[0;32mI (25400) HK: acce_x:-0.10, acce_y:-0.30, acce_z:1.11
+[0m
+[0;32mI (25402) HK: gyro_x:-14.02, gyro_y:11.51, gyro_z:-29.74
+[0m
+[0;32mI (25403) HK: t:29.47 
+[0m
+[0;32mI (25404) HK: pitch:186.42 roll:-246.06 
+[0m
+[0;32mI (25910) HK: acce_x:-0.07, acce_y:-0.11, acce_z:1.10
+[0m
+[0;32mI (25912) HK: gyro_x:10.08, gyro_y:5.08, gyro_z:-10.28
+[0m
+[0;32mI (25913) HK: t:29.57 
+[0m
+[0;32mI (25914) HK: pitch:187.09 roll:-238.57 
+[0m
+[0;32mI (26420) HK: acce_x:-0.10, acce_y:0.03, acce_z:1.11
+[0m
+[0;32mI (26422) HK: gyro_x:-29.23, gyro_y:-18.22, gyro_z:0.72
+[0m
+[0;32mI (26423) HK: t:29.47 
+[0m
+[0;32mI (26424) HK: pitch:175.96 roll:-250.92 
+[0m
+[0;32mI (26930) HK: acce_x:0.15, acce_y:-0.17, acce_z:1.02
+[0m
+[0;32mI (26932) HK: gyro_x:-15.94, gyro_y:31.31, gyro_z:9.08
+[0m
+[0;32mI (26933) HK: t:29.42 
+[0m
+[0;32mI (26934) HK: pitch:190.09 roll:-256.55 
+[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+SHA-256 comparison failed:
+Calculated: 174f900b7a4036158a34b6ba1ccb6ecaa69f3f74e9624b3db429cfd9874cb2ad
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9908
+[0;32mI (45) boot: ESP-IDF 33c1bea7-dirty 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Jul  6 2024 17:10:51[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (49) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (58) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (62) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (67) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (76) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (91) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (98) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (106) boot:  3 ota_0            OTA app          00 10 00010000 002ee000[0m
+[0;32mI (113) boot:  4 ota_1            OTA app          00 11 00300000 002ee000[0m
+[0;32mI (121) boot:  5 triad            WiFi data        01 02 005ee000 00004000[0m
+[0;32mI (128) boot: End of partition table[0m
+[0;32mI (133) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0ba90h ( 47760) map[0m
+[0;32mI (146) esp_image: segment 1: paddr=0001bab8 vaddr=3fc94200 size=02f94h ( 12180) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0001ea54 vaddr=40374000 size=015c4h (  5572) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1f6a8h (128680) map[0m
+[0;32mI (181) esp_image: segment 4: paddr=0003f6d0 vaddr=403755c4 size=0eb54h ( 60244) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (209) cpu_start: Multicore app[0m
+[0;32mI (209) octal_psram: ECC is enabled[0m
+[0;32mI (209) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (211) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (216) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (222) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (227) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (232) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (237) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (243) octal_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (249) octal_psram: BurstLen     : 0x03 (1024 Byte)[0m
+[0;32mI (254) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (260) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (266) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (271) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (276) esp_psram: Speed: 80MHz[0m
+[0;32mI (295) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (302) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (302) cpu_start: Pro cpu up.[0m
+[0;32mI (302) cpu_start: Starting app cpu, entry point is 0x4037551c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (765) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (774) cpu_start: Pro cpu start user code[0m
+[0;32mI (774) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (774) cpu_start: Application information:[0m
+[0;32mI (777) cpu_start: Project name:     main[0m
+[0;32mI (782) cpu_start: App version:      0.0.1_0018-1-g33c1bea7-dirty[0m
+[0;32mI (789) cpu_start: Compile time:     Jul  6 2024 17:08:11[0m
+[0;32mI (795) cpu_start: ELF file SHA256:  8ab173d60e813561...[0m
+[0;32mI (801) cpu_start: ESP-IDF:          33c1bea7-dirty[0m
+[0;32mI (807) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (811) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (816) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (821) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (828) heap_init: At 3FC97B20 len 00051BF0 (326 KiB): DRAM[0m
+[0;32mI (834) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (841) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (847) esp_psram: Adding pool of 7488K of PSRAM memory to heap allocator[0m
+[0;32mI (855) spi_flash: detected chip: gd[0m
+[0;32mI (859) spi_flash: flash io: dio[0m
+[0;32mI (863) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (870) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (877) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (882) coexist: coexist rom version e7ae62f[0m
+[0;32mI (887) app_start: Starting scheduler on CPU0[0m
+[0;32mI (892) app_start: Starting scheduler on CPU1[0m
+[0;32mI (892) main_task: Started on CPU0[0m
+[0;32mI (902) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (910) main_task: Calling app_main()[0m
+[0;32mI (918) HK: acce_x:0.13, acce_y:-0.09, acce_z:1.08
+[0m
+[0;32mI (921) HK: gyro_x:-11.31, gyro_y:0.26, gyro_z:-1.95
+[0m
+[0;32mI (926) HK: t:29.47 
+[0m
+[0;32mI (930) HK: acce_x:0.10, acce_y:-0.16, acce_z:1.08
+[0m
+[0;32mI (936) HK: gyro_x:-6.73, gyro_y:-4.63, gyro_z:-5.02
+[0m
+[0;32mI (941) HK: t:29.47 
+[0m
+[0;32mI (943) HK: pitch:5.02 roll:-8.32 
+[0m
+[0;32mI (1448) HK: acce_x:0.15, acce_y:-0.12, acce_z:1.07
+[0m
+[0;32mI (1450) HK: gyro_x:-8.31, gyro_y:3.85, gyro_z:-0.92
+[0m
+[0;32mI (1451) HK: t:29.52 
+[0m
+[0;32mI (1452) HK: pitch:6.98 roll:-12.48 
+[0m
+[0;32mI (1957) HK: acce_x:0.14, acce_y:-0.10, acce_z:1.06
+[0m
+[0;32mI (1959) HK: gyro_x:-6.18, gyro_y:-1.53, gyro_z:-3.79
+[0m
+[0;32mI (1960) HK: t:29.42 
+[0m
+[0;32mI (1961) HK: pitch:6.22 roll:-15.53 
+[0m
+[0;32mI (2466) HK: acce_x:0.10, acce_y:-0.13, acce_z:1.10
+[0m
+[0;32mI (2468) HK: gyro_x:-5.80, gyro_y:0.49, gyro_z:-2.75
+[0m
+[0;32mI (2469) HK: t:29.47 
+[0m
+[0;32mI (2470) HK: pitch:6.45 roll:-18.36 
+[0m
+[0;32mI (2975) HK: acce_x:0.15, acce_y:-0.14, acce_z:1.06
+[0m
+[0;32mI (2977) HK: gyro_x:-16.56, gyro_y:1.19, gyro_z:-0.87
+[0m
+[0;32mI (2978) HK: t:29.38 
+[0m
+[0;32mI (2979) HK: pitch:7.07 roll:-26.60 
+[0m
+[0;32mI (3484) HK: acce_x:0.22, acce_y:-0.50, acce_z:0.78
+[0m
+[0;32mI (3486) HK: gyro_x:-75.59, gyro_y:-21.54, gyro_z:12.89
+[0m
+[0;32mI (3487) HK: t:29.52 
+[0m
+[0;32mI (3488) HK: pitch:-3.70 roll:-64.76 
+[0m
+[0;32mI (3993) HK: acce_x:-0.13, acce_y:-0.94, acce_z:0.36
+[0m
+[0;32mI (3995) HK: gyro_x:-37.88, gyro_y:15.44, gyro_z:36.35
+[0m
+[0;32mI (3996) HK: t:29.52 
+[0m
+[0;32mI (3997) HK: pitch:3.92 roll:-83.89 
+[0m
+[0;32mI (4502) HK: acce_x:-0.14, acce_y:-0.98, acce_z:0.15
+[0m
+[0;32mI (4504) HK: gyro_x:-22.49, gyro_y:5.37, gyro_z:-1.24
+[0m
+[0;32mI (4505) HK: t:29.38 
+[0m
+[0;32mI (4506) HK: pitch:6.15 roll:-95.19 
+[0m
+[0;32mI (5011) HK: acce_x:-0.19, acce_y:-0.98, acce_z:0.07
+[0m
+[0;32mI (5013) HK: gyro_x:-11.95, gyro_y:-5.76, gyro_z:0.40
+[0m
+[0;32mI (5014) HK: t:29.47 
+[0m
+[0;32mI (5015) HK: pitch:2.49 roll:-101.12 
+[0m
+[0;32mI (5520) HK: acce_x:-0.21, acce_y:-1.09, acce_z:0.13
+[0m
+[0;32mI (5522) HK: gyro_x:62.98, gyro_y:-45.08, gyro_z:-33.83
+[0m
+[0;32mI (5523) HK: t:29.57 
+[0m
+[0;32mI (5524) HK: pitch:-20.85 roll:-69.20 
+[0m
+[0;32mI (6030) HK: acce_x:-0.04, acce_y:0.16, acce_z:1.23
+[0m
+[0;32mI (6032) HK: gyro_x:69.01, gyro_y:-131.56, gyro_z:-140.00
+[0m
+[0;32mI (6033) HK: t:29.52 
+[0m
+[0;32mI (6034) HK: pitch:-87.09 roll:-33.59 
+[0m
+[0;32mI (6540) HK: acce_x:0.25, acce_y:0.52, acce_z:1.04
+[0m
+[0;32mI (6542) HK: gyro_x:85.42, gyro_y:23.77, gyro_z:1.54
+[0m
+[0;32mI (6543) HK: t:29.47 
+[0m
+[0;32mI (6544) HK: pitch:-74.10 roll:10.10 
+[0m
+[0;32mI (7049) HK: acce_x:0.37, acce_y:0.78, acce_z:0.57
+[0m
+[0;32mI (7051) HK: gyro_x:48.87, gyro_y:-27.95, gyro_z:3.88
+[0m
+[0;32mI (7052) HK: t:29.57 
+[0m
+[0;32mI (7053) HK: pitch:-87.11 roll:35.16 
+[0m
+[0;32mI (7558) HK: acce_x:0.18, acce_y:0.92, acce_z:0.36
+[0m
+[0;32mI (7560) HK: gyro_x:22.78, gyro_y:-6.82, gyro_z:-15.45
+[0m
+[0;32mI (7561) HK: t:29.52 
+[0m
+[0;32mI (7562) HK: pitch:-89.41 roll:46.98 
+[0m
+[0;32mI (8067) HK: acce_x:0.08, acce_y:1.04, acce_z:0.19
+[0m
+[0;32mI (8069) HK: gyro_x:-8.79, gyro_y:4.24, gyro_z:-15.22
+[0m
+[0;32mI (8070) HK: t:29.52 
+[0m
+[0;32mI (8071) HK: pitch:-86.16 roll:42.88 
+[0m
+[0;32mI (8576) HK: acce_x:-0.01, acce_y:0.66, acce_z:1.08
+[0m
+[0;32mI (8578) HK: gyro_x:-168.03, gyro_y:-12.61, gyro_z:59.92
+[0m
+[0;32mI (8579) HK: t:29.57 
+[0m
+[0;32mI (8580) HK: pitch:-91.66 roll:-41.97 
+[0m
+[0;32mI (9086) HK: acce_x:0.03, acce_y:-0.58, acce_z:0.92
+[0m
+[0;32mI (9088) HK: gyro_x:-69.31, gyro_y:59.88, gyro_z:10.61
+[0m
+[0;32mI (9089) HK: t:29.57 
+[0m
+[0;32mI (9090) HK: pitch:-60.51 roll:-76.85 
+[0m
+[0;32mI (9595) HK: acce_x:-0.32, acce_y:-0.83, acce_z:0.57
+[0m
+[0;32mI (9597) HK: gyro_x:-23.83, gyro_y:15.39, gyro_z:-12.61
+[0m
+[0;32mI (9598) HK: t:29.52 
+[0m
+[0;32mI (9599) HK: pitch:-52.44 roll:-88.65 
+[0m
+[0;32mI (10105) HK: acce_x:0.28, acce_y:-1.09, acce_z:0.54
+[0m
+[0;32mI (10107) HK: gyro_x:167.21, gyro_y:-96.08, gyro_z:-128.32
+[0m
+[0;32mI (10108) HK: t:29.47 
+[0m
+[0;32mI (10109) HK: pitch:-100.18 roll:-3.92 
+[0m
+[0;32mI (10615) HK: acce_x:0.04, acce_y:-0.84, acce_z:0.77
+[0m
+[0;32mI (10617) HK: gyro_x:-66.34, gyro_y:-59.80, gyro_z:22.24
+[0m
+[0;32mI (10618) HK: t:29.47 
+[0m
+[0;32mI (10619) HK: pitch:-129.33 roll:-37.84 
+[0m
+[0;32mI (11125) HK: acce_x:-0.67, acce_y:-0.76, acce_z:-0.17
+[0m
+[0;32mI (11127) HK: gyro_x:-500.27, gyro_y:-204.12, gyro_z:91.25
+[0m
+[0;32mI (11128) HK: t:29.47 
+[0m
+[0;32mI (11130) HK: pitch:-232.21 roll:-291.24 
+[0m
+[0;32mI (11635) HK: acce_x:0.20, acce_y:-0.88, acce_z:-0.34
+[0m
+[0;32mI (11637) HK: gyro_x:-8.98, gyro_y:-2.52, gyro_z:-8.70
+[0m
+[0;32mI (11638) HK: t:29.52 
+[0m
+[0;32mI (11639) HK: pitch:-229.67 roll:-293.97 
+[0m
+[0;32mI (12145) HK: acce_x:0.17, acce_y:-0.84, acce_z:-0.36
+[0m
+[0;32mI (12147) HK: gyro_x:-7.77, gyro_y:-9.57, gyro_z:1.22
+[0m
+[0;32mI (12148) HK: t:29.42 
+[0m
+[0;32mI (12149) HK: pitch:-230.65 roll:-296.08 
+[0m
+[0;32mI (12655) HK: acce_x:0.24, acce_y:-0.86, acce_z:-0.37
+[0m
+[0;32mI (12657) HK: gyro_x:-7.68, gyro_y:-1.02, gyro_z:-5.40
+[0m
+[0;32mI (12658) HK: t:29.47 
+[0m
+[0;32mI (12659) HK: pitch:-227.40 roll:-298.13 
+[0m
+[0;32mI (13165) HK: acce_x:0.25, acce_y:-0.85, acce_z:-0.37
+[0m
+[0;32mI (13167) HK: gyro_x:-7.04, gyro_y:-0.06, gyro_z:-3.54
+[0m
+[0;32mI (13168) HK: t:29.47 
+[0m
+[0;32mI (13169) HK: pitch:-223.70 roll:-299.84 
+[0m
+[0;32mI (13675) HK: acce_x:0.28, acce_y:-0.83, acce_z:-0.35
+[0m
+[0;32mI (13677) HK: gyro_x:-18.29, gyro_y:-0.96, gyro_z:-21.94
+[0m
+[0;32mI (13678) HK: t:29.52 
+[0m
+[0;32mI (13679) HK: pitch:-220.53 roll:-307.21 
+[0m
+[0;32mI (14185) HK: acce_x:0.30, acce_y:-0.82, acce_z:-0.39
+[0m
+[0;32mI (14187) HK: gyro_x:-33.42, gyro_y:-37.95, gyro_z:-27.79
+[0m
+[0;32mI (14188) HK: t:29.47 
+[0m
+[0;32mI (14189) HK: pitch:-236.07 roll:-322.16 
+[0m
+[0;32mI (14695) HK: acce_x:0.23, acce_y:-1.04, acce_z:-0.40
+[0m
+[0;32mI (14697) HK: gyro_x:-19.57, gyro_y:7.79, gyro_z:-129.92
+[0m
+[0;32mI (14698) HK: t:29.52 
+[0m
+[0;32mI (14699) HK: pitch:-228.28 roll:-329.93 
+[0m
+[0;32mI (15205) HK: acce_x:0.66, acce_y:-0.70, acce_z:-0.86
+[0m
+[0;32mI (15207) HK: gyro_x:-126.75, gyro_y:85.56, gyro_z:-84.96
+[0m
+[0;32mI (15208) HK: t:29.52 
+[0m
+[0;32mI (15209) HK: pitch:-181.37 roll:-392.05 
+[0m
+[0;32mI (15715) HK: acce_x:0.94, acce_y:-0.41, acce_z:0.31
+[0m
+[0;32mI (15717) HK: gyro_x:51.71, gyro_y:7.22, gyro_z:-58.03
+[0m
+[0;32mI (15718) HK: t:29.57 
+[0m
+[0;32mI (15719) HK: pitch:-175.20 roll:-362.56 
+[0m
+[0;32mI (16225) HK: acce_x:0.63, acce_y:-0.38, acce_z:0.63
+[0m
+[0;32mI (16227) HK: gyro_x:-46.26, gyro_y:-90.32, gyro_z:-81.13
+[0m
+[0;32mI (16228) HK: t:29.47 
+[0m
+[0;32mI (16229) HK: pitch:-218.62 roll:-382.62 
+[0m
+[0;32mI (16735) HK: acce_x:0.91, acce_y:0.10, acce_z:0.04
+[0m
+[0;32mI (16737) HK: gyro_x:-1.27, gyro_y:-3.45, gyro_z:-31.92
+[0m
+[0;32mI (16738) HK: t:29.57 
+[0m
+[0;32mI (16739) HK: pitch:-217.30 roll:-378.75 
+[0m
+[0;32mI (17245) HK: acce_x:0.84, acce_y:-0.15, acce_z:0.79
+[0m
+[0;32mI (17247) HK: gyro_x:24.27, gyro_y:161.77, gyro_z:25.85
+[0m
+[0;32mI (17248) HK: t:29.52 
+[0m
+[0;32mI (17249) HK: pitch:-132.97 roll:-362.81 
+[0m
+[0;32mI (17755) HK: acce_x:0.15, acce_y:-0.18, acce_z:1.11
+[0m
+[0;32mI (17757) HK: gyro_x:-5.47, gyro_y:-45.39, gyro_z:-27.51
+[0m
+[0;32mI (17758) HK: t:29.42 
+[0m
+[0;32mI (17759) HK: pitch:-154.48 roll:-362.03 
+[0m
+[0;32mI (18265) HK: acce_x:0.25, acce_y:-0.13, acce_z:1.09
+[0m
+[0;32mI (18267) HK: gyro_x:-8.92, gyro_y:18.61, gyro_z:-20.29
+[0m
+[0;32mI (18268) HK: t:29.52 
+[0m
+[0;32mI (18269) HK: pitch:-143.41 roll:-362.98 
+[0m
+[0;32mI (18775) HK: acce_x:-0.06, acce_y:-0.02, acce_z:1.10
+[0m
+[0;32mI (18777) HK: gyro_x:-10.52, gyro_y:38.37, gyro_z:-7.95
+[0m
+[0;32mI (18778) HK: t:29.42 
+[0m
+[0;32mI (18779) HK: pitch:-122.63 roll:-364.67 
+[0m
+[0;32mI (19285) HK: acce_x:-0.18, acce_y:-0.04, acce_z:1.11
+[0m
+[0;32mI (19287) HK: gyro_x:-1.42, gyro_y:-2.44, gyro_z:5.25
+[0m
+[0;32mI (19288) HK: t:29.42 
+[0m
+[0;32mI (19289) HK: pitch:-122.73 roll:-361.76 
+[0m
+[0;32mI (19795) HK: acce_x:-0.09, acce_y:0.01, acce_z:1.09
+[0m
+[0;32mI (19797) HK: gyro_x:-4.75, gyro_y:3.53, gyro_z:-5.69
+[0m
+[0;32mI (19798) HK: t:29.47 
+[0m
+[0;32mI (19799) HK: pitch:-119.77 roll:-360.54 
+[0m
+[0;32mI (20305) HK: acce_x:-0.07, acce_y:0.01, acce_z:1.08
+[0m
+[0;32mI (20307) HK: gyro_x:-7.88, gyro_y:-3.40, gyro_z:-1.36
+[0m
+[0;32mI (20308) HK: t:29.61 
+[0m
+[0;32mI (20309) HK: pitch:-120.33 roll:-360.91 
+[0m
+[0;32mI (20815) HK: acce_x:0.02, acce_y:0.03, acce_z:1.08
+[0m
+[0;32mI (20817) HK: gyro_x:-0.55, gyro_y:-32.90, gyro_z:-12.60
+[0m
+[0;32mI (20818) HK: t:29.57 
+[0m
+[0;32mI (20819) HK: pitch:-135.73 roll:-357.56 
+[0m
+[0;32mI (21325) HK: acce_x:0.46, acce_y:-0.01, acce_z:0.97
+[0m
+[0;32mI (21327) HK: gyro_x:-24.75, gyro_y:-91.97, gyro_z:26.21
+[0m
+[0;32mI (21328) HK: t:29.52 
+[0m
+[0;32mI (21329) HK: pitch:-180.55 roll:-366.49 
+[0m
+[0;32mI (21835) HK: acce_x:0.87, acce_y:0.08, acce_z:0.67
+[0m
+[0;32mI (21837) HK: gyro_x:-16.05, gyro_y:-16.63, gyro_z:-21.30
+[0m
+[0;32mI (21838) HK: t:29.52 
+[0m
+[0;32mI (21839) HK: pitch:-186.62 roll:-370.86 
+[0m
+[0;32mI (22345) HK: acce_x:1.26, acce_y:-0.30, acce_z:-0.34
+[0m
+[0;32mI (22347) HK: gyro_x:23.16, gyro_y:-126.23, gyro_z:66.43
+[0m
+[0;32mI (22348) HK: t:29.52 
+[0m
+[0;32mI (22349) HK: pitch:-247.44 roll:-356.84 
+[0m
+[0;32mI (22855) HK: acce_x:0.77, acce_y:-0.45, acce_z:-0.45
+[0m
+[0;32mI (22857) HK: gyro_x:-2.67, gyro_y:-24.18, gyro_z:4.49
+[0m
+[0;32mI (22858) HK: t:29.52 
+[0m
+[0;32mI (22859) HK: pitch:-255.97 roll:-355.97 
+[0m
+[0;32mI (23365) HK: acce_x:0.69, acce_y:-0.44, acce_z:-0.52
+[0m
+[0;32mI (23367) HK: gyro_x:-7.30, gyro_y:-8.38, gyro_z:0.40
+[0m
+[0;32mI (23368) HK: t:29.52 
+[0m
+[0;32mI (23369) HK: pitch:-256.37 roll:-357.50 
+[0m
+[0;32mI (23875) HK: acce_x:0.64, acce_y:-0.44, acce_z:-0.56
+[0m
+[0;32mI (23877) HK: gyro_x:-7.21, gyro_y:-5.77, gyro_z:-1.31
+[0m
+[0;32mI (23878) HK: t:29.61 
+[0m
+[0;32mI (23879) HK: pitch:-255.41 roll:-358.98 
+[0m
