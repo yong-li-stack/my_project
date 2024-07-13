@@ -11,7 +11,7 @@ int esp32_i2c_write(unsigned char slave_addr, unsigned char reg_addr, unsigned c
     i2c_master_write_byte(cmd, reg_addr, ACK_CHECK_EN);
     i2c_master_write(cmd, data, length, ACK_CHECK_EN);
     i2c_master_stop(cmd);
-    esp_err_t ret = i2c_master_cmd_begin(0, cmd, 1000 / portTICK_PERIOD_MS);
+    esp_err_t ret = i2c_master_cmd_begin(0, cmd, 1000 / portTICK_RATE_MS);
     i2c_cmd_link_delete(cmd);
     // printf("esp32_i2c_write\n");
     return ret;
@@ -33,7 +33,7 @@ int esp32_i2c_read(unsigned char slave_addr, unsigned char reg_addr, unsigned ch
     }
     i2c_master_read_byte(cmd, data + length - 1, NACK_VAL);
     i2c_master_stop(cmd);
-    esp_err_t ret = i2c_master_cmd_begin(0, cmd, 1000 / portTICK_PERIOD_MS);
+    esp_err_t ret = i2c_master_cmd_begin(0, cmd, 1000 / portTICK_RATE_MS);
     i2c_cmd_link_delete(cmd);
     return ret;
 }
@@ -41,7 +41,7 @@ int esp32_i2c_read(unsigned char slave_addr, unsigned char reg_addr, unsigned ch
 
 int esp32_delay_ms(unsigned long num_ms)
 {
-    vTaskDelay(num_ms / portTICK_PERIOD_MS);
+    vTaskDelay(num_ms / portTICK_RATE_MS);
     return 0;
 }
 

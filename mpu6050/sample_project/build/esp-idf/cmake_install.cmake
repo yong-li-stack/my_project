@@ -409,11 +409,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/work/PT01/code/git_pt01/ESP_IDF/examples/mpu6050/sample_project/build/esp-idf/espressif__mpu6050/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("D:/work/PT01/code/git_pt01/ESP_IDF/examples/mpu6050/sample_project/build/esp-idf/main/cmake_install.cmake")
 endif()
 

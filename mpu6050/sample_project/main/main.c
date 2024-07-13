@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "freertos/queue.h"
 #include "esp_log.h"
 #include "unity.h"
 #include "driver/i2c.h"
-#include "mpu6050.h"
+#include "driver/gpio.h"
 #include "esp_system.h"
 
 #include "mpu_dmp_driver.h"
@@ -52,7 +54,7 @@ void gpio_task(void* arg)
         if(xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY)) {
             gyro_data_ready_cb();
             dmp_get_data();
-            //printf("pitch:%f,roll:%f,yaw:%f\n",pitch, roll, yaw);
+            printf("pitch:%f,roll:%f,yaw:%f\n",pitch, roll, yaw);
             // expression.frame_delay_ms = (uint16_t)(esp_random() % 10);
             // if (abs(pitch) > 30)
             // {
